@@ -1,31 +1,47 @@
-# MainRepoDemo's README.md
+# GraphicRepoDemo
+graphic project demo，whose graphic_shared module should be shared to [MainRepoDemo](https://github.com/zyestin/MainRepoDemo)
+
+
+
 
 ## dir structure && description
 
 ```
-├── README.md                 当前文件
-└── app                       应用代码目录
-    ├── base_shared           基础设施代码 **与其它项目可共享的**
-    │   ├── components
-    │   │   └── list
-    │   │       └── base.js
-    │   └── utils
-    │       └── theme
-    │           └── index.js
-    ├── common                 常用组件、工具代码  非共享的、MainRepoDemo才会用到的
+.
+├── README.md
+└── app
+    ├── common
     │   ├── components
     │   │   └── navigationBar
     │   │       └── index.js
     │   └── utils
     │       └── time
     │           └── index.js
-    └── modules                模块集合，存放MainRepoDemo用到的各业务模块 
-        ├── graphic_shared     graphic模块 **共享自(来自于)其他项目**
-        └── home
-            └── index.js
+    └── modules
+        ├── graphic_shared                            该模块需要共享给 MainRepoDemo
+        │   ├── assets
+        │   │   ├── animations
+        │   │   │   └── loading.json
+        │   │   └── images
+        │   │       ├── create
+        │   │       │   └── collection_selected.png
+        │   │       └── feedDetail
+        │   │           └── icon-like.png
+        │   ├── components
+        │   │   ├── comment
+        │   │   │   └── index.js
+        │   │   └── feed
+        │   │       └── index.js
+        │   ├── pages
+        │   │   ├── follow
+        │   │   │   └── index.js
+        │   │   ├── home
+        │   │   │   └── index.js
+        │   │   └── mine
+        │   │       └── index.js
+        │   └── utils
+        │       └── time
+        │           └── index.js
+        └── login
+
 ```
-
-
-
-
-
