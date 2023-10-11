@@ -1,3 +1,0 @@
-[submodule "app/modules/graphic_shared"]
-	path = app/modules/graphic_shared
-	url = git@github.com:zyestin/Graphic2Repo.git
